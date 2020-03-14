@@ -1,5 +1,7 @@
 # FriendlyEats (Web)
 
+Firestore's official code lab
+
 ## Introduction
 
 FriendlyEats is a restaurant recommendation app built on Cloud Firestore.

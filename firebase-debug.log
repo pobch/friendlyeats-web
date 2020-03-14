@@ -1,0 +1,29 @@
+[debug] [2020-03-14T08:44:15.478Z] ----------------------------------------------------------------------
+[debug] [2020-03-14T08:44:15.480Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2020-03-14T08:44:15.480Z] CLI Version:   7.15.0
+[debug] [2020-03-14T08:44:15.480Z] Platform:      linux
+[debug] [2020-03-14T08:44:15.480Z] Node Version:  v13.11.0
+[debug] [2020-03-14T08:44:15.480Z] Time:          Sat Mar 14 2020 15:44:15 GMT+0700 (Indochina Time)
+[debug] [2020-03-14T08:44:15.480Z] ----------------------------------------------------------------------
+[debug] [2020-03-14T08:44:15.480Z] 
+[debug] [2020-03-14T08:44:15.484Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-14T08:44:15.484Z] > authorizing via signed-in user
+[debug] [2020-03-14T08:44:15.484Z] [iam] checking project friendlyeats-36970 for permissions ["firebase.projects.get"]
+[debug] [2020-03-14T08:44:15.486Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-14T08:44:15.486Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-03-14T08:44:15.756Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-14T08:44:15.793Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-36970:testIamPermissions  
+
+[debug] [2020-03-14T08:44:17.184Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-14T08:44:17.187Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-36970  
+ 
+[debug] [2020-03-14T08:44:17.798Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/p08/tutorials/friendlyeats-web'...
+[info] 
+[debug] [2020-03-14T08:44:17.803Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-36970/webApps/-/config  
+ 
+[debug] [2020-03-14T08:44:18.821Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] ✔  hosting: Local server: http://localhost:5000

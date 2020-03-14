@@ -13,40 +13,43 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-'use strict';
+'use strict'
 
 FriendlyEats.prototype.addRestaurant = function(data) {
-  /*
-    TODO: Implement adding a document
-  */
-};
+  const collection = firebase.firestore().collection('restaurants')
+  return collection.add(data)
+}
 
 FriendlyEats.prototype.getAllRestaurants = function(renderer) {
-  /*
-    TODO: Retrieve list of restaurants
-  */
-};
+  const query = firebase
+    .firestore()
+    .collection('restaurants')
+    .orderBy('avgRating', 'desc')
+    .limit(50)
+
+  this.getDocumentsInQuery(query, renderer)
+}
 
 FriendlyEats.prototype.getDocumentsInQuery = function(query, renderer) {
-  /*
-    TODO: Render all documents in the provided query
-  */
-};
+  query.onSnapshot(snapshot => {
+    console.log(snapshot)
+  })
+}
 
 FriendlyEats.prototype.getRestaurant = function(id) {
   /*
     TODO: Retrieve a single restaurant
   */
-};
+}
 
 FriendlyEats.prototype.getFilteredRestaurants = function(filters, renderer) {
   /*
     TODO: Retrieve filtered list of restaurants
   */
-};
+}
 
 FriendlyEats.prototype.addRating = function(restaurantID, rating) {
   /*
     TODO: Retrieve add a rating to a restaurant
   */
-};
+}
