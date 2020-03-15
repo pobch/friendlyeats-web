@@ -66,13 +66,8 @@ FriendlyEats.prototype.getFilteredRestaurants = function(filters, renderer) {
   }
 
   if (filters.price !== 'Any') {
-    const mapPrices = {
-      $: 1,
-      $$: 2,
-      $$$: 3,
-      $$$$: 4
-    };
-    query = query.where('price', '==', mapPrices[filters.price]);
+    const priceNum = filters.price.length;
+    query = query.where('price', '==', priceNum);
   }
 
   if (filters.sort === 'Rating') {
@@ -85,7 +80,24 @@ FriendlyEats.prototype.getFilteredRestaurants = function(filters, renderer) {
 };
 
 FriendlyEats.prototype.addRating = function(restaurantID, rating) {
-  /*
-    TODO: Retrieve add a rating to a restaurant
-  */
+  const restaurantsCollection = firebase.firestore().collection('restaurants');
+  const document = restaurantsCollection.doc(restaurantID);
+  const newRatingsDocument = document.collection('ratings').doc();
+
+  return firebase.firestore().runTransaction(transaction => {
+    // return Promise
+    return transaction.get(document).then(doc => {
+      let data = doc.data();
+
+      const newAvgRating =
+        (data.avgRating * data.numRatings + rating.rating) /
+        (data.numRatings + 1);
+
+      transaction.update(document, {
+        avgRating: newAvgRating,
+        numRatings: data.numRatings + 1
+      });
+      transaction.set(newRatingsDocument, rating);
+    });
+  });
 };

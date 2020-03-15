@@ -1,25 +1,25 @@
-[debug] [2020-03-14T19:18:58.200Z] ----------------------------------------------------------------------
-[debug] [2020-03-14T19:18:58.201Z] Command:       /usr/bin/node /usr/bin/firebase serve
-[debug] [2020-03-14T19:18:58.201Z] CLI Version:   7.15.0
-[debug] [2020-03-14T19:18:58.201Z] Platform:      linux
-[debug] [2020-03-14T19:18:58.201Z] Node Version:  v13.11.0
-[debug] [2020-03-14T19:18:58.202Z] Time:          Sun Mar 15 2020 02:18:58 GMT+0700 (Indochina Time)
-[debug] [2020-03-14T19:18:58.202Z] ----------------------------------------------------------------------
-[debug] [2020-03-14T19:18:58.202Z] 
-[debug] [2020-03-14T19:18:58.207Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-03-14T19:18:58.207Z] > authorizing via signed-in user
-[debug] [2020-03-14T19:18:58.207Z] [iam] checking project friendlyeats-36970 for permissions ["firebase.projects.get"]
-[debug] [2020-03-14T19:18:58.208Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-36970:testIamPermissions  
+[debug] [2020-03-15T11:02:29.822Z] ----------------------------------------------------------------------
+[debug] [2020-03-15T11:02:29.824Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2020-03-15T11:02:29.824Z] CLI Version:   7.15.0
+[debug] [2020-03-15T11:02:29.824Z] Platform:      linux
+[debug] [2020-03-15T11:02:29.824Z] Node Version:  v13.11.0
+[debug] [2020-03-15T11:02:29.824Z] Time:          Sun Mar 15 2020 18:02:29 GMT+0700 (Indochina Time)
+[debug] [2020-03-15T11:02:29.824Z] ----------------------------------------------------------------------
+[debug] [2020-03-15T11:02:29.825Z] 
+[debug] [2020-03-15T11:02:29.995Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-15T11:02:29.996Z] > authorizing via signed-in user
+[debug] [2020-03-15T11:02:29.996Z] [iam] checking project friendlyeats-36970 for permissions ["firebase.projects.get"]
+[debug] [2020-03-15T11:02:30.000Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-36970:testIamPermissions  
 
-[debug] [2020-03-14T19:18:59.847Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-14T19:18:59.852Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-36970  
+[debug] [2020-03-15T11:02:31.767Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-15T11:02:31.770Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-36970  
  
-[debug] [2020-03-14T19:19:00.750Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-15T11:02:32.576Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/home/p08/tutorials/friendlyeats-web'...
 [info] 
-[debug] [2020-03-14T19:19:00.755Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-36970/webApps/-/config  
+[debug] [2020-03-15T11:02:32.581Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-36970/webApps/-/config  
  
-[debug] [2020-03-14T19:19:02.036Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-15T11:02:33.756Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: ./
 [info] ✔  hosting: Local server: http://localhost:5000
